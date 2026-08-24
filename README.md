@@ -1,113 +1,59 @@
-# 🛒 Retail Data Lakehouse
+# Retail Data Lakehouse
 
-A Retail Sales Analytics project built with Databricks and PySpark.
-
-This project demonstrates an end-to-end data analytics workflow, including data ingestion, data cleaning, KPI analysis, and interactive dashboard creation.
-
----
+Retail sales analysis project built with Databricks and PySpark.
 
 ## Project Overview
 
-This project analyzes an online retail dataset to discover:
+This project analyzes retail transaction data using PySpark on Databricks.
 
-- Top revenue-generating products
-- Best customers by revenue
-- Revenue by country
-- Monthly sales trends
-- Product sales quantity
+The analysis includes:
 
-The project follows a typical Lakehouse analytics workflow inside Databricks.
-
----
+- Data Cleaning
+- Customer KPI Analysis
+- Product KPI Analysis
+- Sales Dashboard
 
 ## Tech Stack
 
 - Databricks
-- Apache Spark
-- PySpark DataFrame API
-- Git & GitHub
-
----
+- Apache Spark (PySpark)
+- Python
+- Git
+- GitHub
 
 ## Project Structure
 
 ```
+notebooks/
+├── 01_ingest_data.ipynb
+├── 02_customer_kpi.ipynb
+├── 03_product_kpi.ipynb
+└── 04_sales_dashboard.ipynb
 
-Retail-Data-Lakehouse/
-
-│
-
-├── notebooks/
-
-│ ├── 01_ingest_data.ipynb
-
-│ ├── 02_customer_kpi.ipynb
-
-│ ├── 03_product_kpi.ipynb
-
-│ └── 04_sales_dashboard.ipynb
-
-│
-
-└── README.md
-
+images/
 ```
-
----
-
-## KPI Analysis
-
-### Customer KPI
-
-- Top 10 Customers by Revenue
-
-### Product KPI
-
-- Top 10 Products by Revenue
-- Top 10 Products by Quantity
-
-### Sales KPI
-
-- Revenue by Country
-- Monthly Revenue Trend
-
----
 
 ## Dashboard
 
-The dashboard contains:
+### Revenue by Country
 
-- Monthly Revenue Trend
-- Revenue by Country
-- Top Customers by Revenue
-- Top Products by Revenue
-- Top Products by Quantity
+![Country Revenue](images/country_revenue.png)
 
 ---
 
-## Data Processing
+### Monthly Revenue Trend
 
-The project includes:
-
-- Data Profiling
-- Missing Value Analysis
-- Data Cleaning
-- Revenue Calculation
-- Aggregation using Spark DataFrame API
+![Monthly Revenue](images/monthly_revenue.png)
 
 ---
 
-## Skills Demonstrated
+### Top 10 Products by Revenue
 
-- Spark DataFrame Transformation
-- Data Aggregation
-- Window-style Business Analysis
-- Dashboard Visualization
-- Git Version Control
-- Databricks Lakehouse Workflow
+![Top Products Revenue](images/top_products_revenue.png)
 
----
+## Key Insights
 
-## Dataset
-
-Online Retail dataset
+- United Kingdom generated the highest revenue.
+- Sales peaked during the holiday season.
+- A small number of products contributed a large portion of revenue.
+- High-value customers generated significant sales.
