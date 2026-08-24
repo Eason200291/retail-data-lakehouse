@@ -37,7 +37,7 @@ images/
 
 ### Revenue by Country
 
-![Country Revenue](images/country_revenue.png)
+![Country Revenue](images/top_country_revenue.png)
 
 ---
 
